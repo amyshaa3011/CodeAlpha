@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - D'Hub</title>
+  <link rel="stylesheet" href="cart.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<header>
+ <nav class="navbar">
+    <div class="nav-container">
+      <a href="e-commerce_planB.html" class="logo">
+        <img src="https://u.cubeupload.com/amisha_singh3006/logopng.png" alt="D'Hub Logo" class="logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="d'hub.html">Home</a></li>
+        <li><a href="d'hub.html">Blog</a></li>
+        <li><a href="d'hub.html">Shop</a></li>
+        <li><a href="d'hub.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <section class="cart-section">
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <div id="cart-total"></div>
+    <a id="checkout-button" href="#">Proceed to Checkout</a>
+  </section>
+
+  <div id="payment-section" style="display: none;">
+    <h2>Payment Page</h2>
+    <p>Total Amount: ₹<span id="final-amount"></span></p>
+    <button onclick="alert('Redirecting to payment gateway...')">Pay Now</button>
+  </div>
+    <footer>
+    <p>&copy; 2025 D'Hub. All rights reserved.</p>
+  </footer>
+  <script src="cart.js"></script>
+</body>
+</html>

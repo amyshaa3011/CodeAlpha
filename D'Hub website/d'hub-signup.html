@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - D'Hub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="d'hub-login_register.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="auth-container">
+    <h2>Sign Up</h2>
+    <form class="auth-form">
+      <input type="text" id="fullname" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+
+      <div class="toggle-password">
+        <input type="checkbox" id="show-password" />
+        <label for="show-password">Show Passwords</label>
+      </div>
+
+      <div id="error-message" class="error-message"></div>
+
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="d'hub-signin.html">Sign In</a></p>
+    </form>
+  </div>
+
+  <script src="d'hub-login_register.js"></script>
+</body>
+</html>

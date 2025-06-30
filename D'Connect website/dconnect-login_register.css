@@ -1,0 +1,81 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0daa5;
+  color: #4a2d18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #fbf2c4;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(199, 82, 42, 0.2);
+}
+
+.navbar .logo {
+  height: 60px;
+}
+
+.auth-container {
+  background-color: #fbf2c4;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  color: #c7522a;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #e5c185;
+  color: #4a2d18;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #d9ae75;
+}
+
+.join-section {
+  margin-top: 15px;
+}
+
+.join-section input {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.logout {
+  background-color: #ff1932;
+  color: white;
+  margin-top: 20px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D'Flick | Profile</title>
+  <link rel="stylesheet" href="dflick-profile.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container full">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="https://u.cubeupload.com/amisha_singh3006/dflicklogoremovebgpr.png" alt="D'Flick Logo" class="logo">
+        <h1>D'Flick</h1>
+        <p class="tagline">Snap. Scroll. Flick.</p>
+      </div>
+      <ul class="menu">
+        <li><a href="dflick.html"><i class='bx bxs-home'></i> <span>Home</span></a></li>
+        <li id="darkModeToggle"><i class='bx bx-moon'></i> <span>Dark-mode</span></li>
+        <li><i class='bx bx-search'></i> <span>Search</span></li>
+        <li><i class='bx bx-compass'></i> <span>Explore</span></li>
+        <li><i class='bx bx-movie'></i> <span>Reels</span></li>
+        <li><i class='bx bx-message'></i> <span>Messages</span></li>
+        <li><i class='bx bx-heart'></i> <span>Notification</span></li>
+        <li><a href="dflick-create.html"><i class='bx bx-plus'></i> <span>Create</span></a></li>
+        <li><i class='bx bx-user'></i> <span>Profile</span></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main full">
+      <div class="navbar">
+        <input type="text" id="searchInput" placeholder="Search for users...">
+        <div class="profile-display" id="navProfile"></div>
+      </div>
+
+      <div class="profile-section">
+        <div class="user-info">
+          <img id="profilePic" src="" alt="Profile Picture" class="profile-pic">
+          <h2 id="userName"></h2>
+          <p id="userEmail"></p>
+          <!-- Bio Display Section -->
+<p id="bioText" class="bio-text" style="display: none;"></p>
+
+<!-- Bio Edit Section -->
+<textarea id="bioInput" rows="4" placeholder="Write something about yourself..."></textarea>
+
+<div class="bio-actions">
+  <button id="saveBioBtn">Save</button>
+  <button id="editBioBtn" style="display: none;">Edit</button>
+</div>
+
+</div>
+        </div>
+
+        <div class="posts-section">
+          <h3>Your Posts</h3>
+          <div class="user-posts" id="userPostsContainer"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="dflick-profile.js"></script>
+</body>
+</html>

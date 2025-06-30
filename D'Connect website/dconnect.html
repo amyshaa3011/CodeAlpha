@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>D'Connect - Bridging You Closer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="dconnect.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <img src="https://u.cubeupload.com/amisha_singh3006/dconnectlogo1removeb.png" class="logo" alt="D'Connect Logo">
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#" id="chat-toggle">Chat</a></li>
+      <li><a href="#">Contacts</a></li>
+      <li><a href="dconnect-signin.html">Sign In</a></li>
+      <li><a href="dconnect-signup.html">Sign Up</a></li>
+    </ul>
+    <button class="mode-switch" title="Toggle Theme"><i class="fas fa-moon"></i></button>
+  </nav>
+
+  <!-- MAIN -->
+  <div class="main-container">
+    <!-- VIDEO SECTION -->
+    <div class="video-area">
+      <video id="userVideo" autoplay playsinline muted></video>
+      <div class="video-call-actions">
+        <button class="video-action-button mic" title="Mute"><i class="fas fa-microphone"></i></button>
+        <button class="video-action-button camera" title="Toggle Camera"><i class="fas fa-video"></i></button>
+        <button class="video-action-button fullscreen" title="Fullscreen"><i class="fas fa-expand"></i></button>
+        <button class="video-action-button endcall" title="End Call"><i class="fas fa-phone-slash"></i> End</button>
+      </div>
+    </div>
+
+    <!-- CHATBOX -->
+    <div class="chatbox" id="chatbox">
+      <div class="chat-header">Live Chat</div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <input type="text" id="chatInput" placeholder="Type a message..." />
+    </div>
+  </div>
+
+  <script src="dconnect.js"></script>
+</body>
+</html>

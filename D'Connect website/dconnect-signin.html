@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>D'Connect | Login</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="dconnect-login_register.css" />
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="navbar">
+    <img src="https://u.cubeupload.com/amisha_singh3006/dconnectlogo1removeb.png" class="logo" alt="D'Connect Logo" />
+  </header>
+
+  <div class="auth-container">
+    <div class="form-box" id="login-section">
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Gmail only" required />
+      <input type="password" id="login-password" placeholder="Password" required />
+      <button onclick="login()">Login</button>
+      <p>Don't have an account? <a href="dconnect-signup.html">Register here</a></p>
+    </div>
+
+    <div class="form-box" id="meeting-options" style="display: none;">
+      <h2>Welcome to D'Connect</h2>
+      <button onclick="hostMeeting()">Host a Meeting</button>
+      <div class="join-section">
+        <input type="text" id="meeting-code" placeholder="Enter Meeting Code" />
+        <button onclick="joinMeeting()">Join Meeting</button>
+      </div>
+      <button onclick="logout()" class="logout">Logout</button>
+    </div>
+  </div>
+  <script src="dconnect-login_register.js"></script>
+</body>
+</html>
